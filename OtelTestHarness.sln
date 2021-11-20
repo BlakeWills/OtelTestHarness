@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtelTestHarness", "OtelTestHarness\OtelTestHarness.csproj", "{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtelTestHarnessApp", "OtelTestHarnessApp\OtelTestHarnessApp.csproj", "{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C235456-1561-4227-BE14-6C158C405CFE}
+	EndGlobalSection
+EndGlobal
