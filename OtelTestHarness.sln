@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtelTestHarness", "OtelTestHarness\OtelTestHarness.csproj", "{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtelTestHarness", "OtelTestHarness\OtelTestHarness.csproj", "{A7F1EDA4-313B-41DA-AEB0-C0B44E4E5977}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtelTestHarnessApp", "OtelTestHarnessApp\OtelTestHarnessApp.csproj", "{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OtelTestHarnessApp", "OtelTestHarnessApp\OtelTestHarnessApp.csproj", "{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{79849F2D-826C-44AB-84D6-5185C587097D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F37C2044-CC62-4328-8242-7A46AEFC3AE5}"
+	ProjectSection(SolutionItems) = preProject
+		README.Md = README.Md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B35F9A9-46B9-401C-B8C7-00DBD697DB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79849F2D-826C-44AB-84D6-5185C587097D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79849F2D-826C-44AB-84D6-5185C587097D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79849F2D-826C-44AB-84D6-5185C587097D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79849F2D-826C-44AB-84D6-5185C587097D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

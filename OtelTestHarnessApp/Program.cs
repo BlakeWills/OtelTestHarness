@@ -1,9 +1,11 @@
-﻿using OpenTelemetry;
+﻿using Grpc.Net.Client;
+using OpenTelemetry;
 using OpenTelemetry.Trace;
 using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
+using OtelTestHarnessAppGrpc;
 
 namespace OtelTestHarnessApp
 {
@@ -35,13 +37,24 @@ namespace OtelTestHarnessApp
                 })
                 .Build();
 
-            while(true)
+            // Comment out below line to fix http filter.
+            await MakeGrpcRequest();
+
+            while (true)
             {
                 await Task.Delay(TimeSpan.FromSeconds(10));
 
                 using var activity = ActivitySource.StartActivity("test");
                 await _httpClient.GetAsync("https://google.com");
             }
+        }
+
+        private static async Task MakeGrpcRequest()
+        {
+            Console.WriteLine("Making gRPC request");
+            var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            var client = new Greeter.GreeterClient(channel);
+            _ = await client.SayHelloAsync(new HelloRequest { Name = "GreeterClient" });
         }
     }
 }
